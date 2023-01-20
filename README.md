@@ -20,7 +20,7 @@ Write in a config file containing the config for amqp_ext output plugin
 #### **`path/to/config.conf`**
 ``
 [[inputs.CERTAIN_INPUT_PLUGIN]]
-  ...
+  config = config_value
   
 [[outputs.execd]]
   name_suffix = "_amqp_ext"
