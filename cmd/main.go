@@ -7,7 +7,7 @@ import (
 	"time"
 
 	// TODO: import your plugins
-	_ "github.com/HuitianYu/telegraf-output-amqp_ext/plugins/outputs/amqp_ext"
+	_ "github.com/HuitianYu/telegraf-output-plugin-amqp_ext/plugins/outputs/amqp_ext"
 
 	"github.com/influxdata/telegraf/plugins/common/shim"
 )
