@@ -12,7 +12,7 @@ import (
 	"github.com/influxdata/telegraf"
 	"github.com/influxdata/telegraf/config"
 
-	"github.com/HuitianYu/telegraf-output-amqp_ext/internal"
+	"github.com/HuitianYu/telegraf-output-plugin-amqp_ext/internal"
 
 	"github.com/influxdata/telegraf/plugins/common/proxy"
 	"github.com/influxdata/telegraf/plugins/common/tls"
