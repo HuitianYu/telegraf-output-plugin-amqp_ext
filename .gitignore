@@ -1,3 +1,5 @@
 amqp_ext
 amqp_ext.exe
+go.mod
+go.sum
 pipfile
