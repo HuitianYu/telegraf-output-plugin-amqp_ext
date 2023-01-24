@@ -12,7 +12,7 @@ import (
 	"github.com/influxdata/telegraf"
 	"github.com/influxdata/telegraf/config"
 
-	"github.com/HuitianYu/telegraf-output-plugin-amqp_ext/internal"
+	// "github.com/HuitianYu/telegraf-output-plugin-amqp_ext/internal"
 
 	"github.com/influxdata/telegraf/plugins/common/proxy"
 	"github.com/influxdata/telegraf/plugins/common/tls"
@@ -74,7 +74,7 @@ type AMQP struct {
 	client       Client
 	config       *ClientConfig
 	sentMessages int
-	encoder      internal.ContentEncoder
+	encoder      ContentEncoder // internal.ContentEncoder
 }
 
 type Client interface {
@@ -100,7 +100,7 @@ func (q *AMQP) Connect() error {
 	}
 
 	var err error
-	q.encoder, err = internal.NewContentEncoder(q.ContentEncoding)
+	q.encoder, err = NewContentEncoder(q.ContentEncoding) // internal.NewContentEncoder(q.ContentEncoding)
 	if err != nil {
 		return err
 	}
